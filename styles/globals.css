@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slash::before {
+  content: '/';
+  @apply font-black text-tart-orange leading-none mr-2;
+}
+
+.crypted-mail::after {
+  content: attr(data-name) '@' attr(data-domain) '.' attr(data-tld);
+}
