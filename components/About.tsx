@@ -20,11 +20,12 @@ const About = () => {
 
             <p>
               I’ve been working as a full-stack developer for over 10 years
-              based in Turkey. My main focus is on front-end products, but I’ve
-              built mobile applications and back-end systems in different roles
-              and technologies during my career. Since 2019, I’ve been working
-              in contract roles with companies for their projects to develop and
-              optimize.
+              based in Turkey. I met coding to develop my projects when I was in
+              high school. I improved my skills in every project. My main focus
+              is on front-end products, but I’ve built mobile applications and
+              back-end systems in different roles and technologies during my
+              career. Since 2019, I’ve been working in contract roles with
+              companies for their projects to develop and optimize.
             </p>
 
             <p>
@@ -36,7 +37,7 @@ const About = () => {
             </p>
 
             <p>Here are most of the technologies that I used:</p>
-            <div className="grid grid-cols-2 gap-y-2 gap-x-6 lg:gap-x-32">
+            <div className="grid grid-cols-2 gap-y-2 gap-x-6 lg:gap-x-32 max-w-md">
               {SKILLS.map(item => (
                 <div
                   className="font-inconsolata text-alice-blue slash"

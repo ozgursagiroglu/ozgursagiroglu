@@ -22,13 +22,13 @@ const Navigation = () => {
   }, []);
 
   return (
-    <div className="absolute top-11 right-11 space-x-10 hidden lg:block">
+    <div className="absolute top-6 right-6 space-x-4 lg:top-11 lg:right-11 lg:space-x-10">
       {['about-me', 'experience', 'clients', 'contact'].map(item => (
         <Link
           key={item}
           href={`/#${item}`}
           onClick={handleClick}
-          className="slash"
+          className="slash text-sm lg:text-base"
           passHref>
           {item}
         </Link>
