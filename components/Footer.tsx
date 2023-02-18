@@ -1,10 +1,10 @@
-import Script from 'next/script';
+import Container from './Container';
 import Email from './Email';
 
 const Footer = () => {
   return (
-    <>
-      <div className="font-inconsolata text-sm text-center py-10">
+    <Container>
+      <div className="font-inconsolata text-xs lg:text-sm text-center py-10 space-y-2 lg:space-y-0">
         <p>This site has been designed by myself but I’m not a designer :(</p>
         <p>
           That’s why, when designing this site, I was inspired by{' '}
@@ -22,21 +22,7 @@ const Footer = () => {
           <Email name="info" domain="ozgursagiroglu" tld="com" />
         </p>
       </div>
-
-      <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-TGJXHV6TB8"
-      />
-      <Script id="analytics">
-        {`
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
-   
-     gtag('config', 'G-TGJXHV6TB8');
-    `}
-      </Script>
-    </>
+    </Container>
   );
 };
 

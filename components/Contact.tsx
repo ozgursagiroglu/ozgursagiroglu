@@ -1,20 +1,38 @@
+'use client';
+
 import {
   IconBrandGithub,
   IconBrandInstagram,
   IconBrandLinkedin,
   IconBrandStackoverflow,
 } from '@tabler/icons-react';
+import cx from 'classnames';
+import { useInView } from 'react-intersection-observer';
+import AnimatedElement from './AnimatedElement';
 import Email from './Email';
 
 const Contact = () => {
+  const { inView, ref } = useInView({
+    threshold: 1,
+    rootMargin: '0px',
+  });
+
   return (
-    <div id="contact" className="space-y-8 text-center">
-      <div className="text-4xl">👋</div>
-      <div className="text-4xl font-semibold leading-normal">
+    <div id="contact" className="space-y-8 text-center" ref={ref}>
+      <div className="w-full">
+        <span
+          className={cx('inline-block text-4xl', {
+            'animate-sayHello': inView,
+          })}>
+          👋
+        </span>
+      </div>
+
+      <AnimatedElement className="text-2xl lg:text-4xl font-semibold leading-normal">
         Hit me up if you think we can <br /> work{' '}
         <span className="font-bold text-tart-orange">together</span>
-      </div>
-      <div className="flex items-center justify-center gap-6">
+      </AnimatedElement>
+      <AnimatedElement className="flex items-center justify-center gap-6 delay-200">
         <a
           href="https://instagram.com/ozgursagiroglu"
           target="_blank"
@@ -39,9 +57,9 @@ const Contact = () => {
           rel="noreferrer">
           <IconBrandStackoverflow size={24} stroke={1} />
         </a>
-      </div>
+      </AnimatedElement>
 
-      <div className="flex justify-center">
+      <AnimatedElement className="flex justify-center delay-400">
         <Email
           name="info"
           domain="ozgursagiroglu"
@@ -49,7 +67,7 @@ const Contact = () => {
           className="bg-tart-orange border-none shadow-md py-3 px-6 font-semibold">
           Get in touch
         </Email>
-      </div>
+      </AnimatedElement>
     </div>
   );
 };
