@@ -22,7 +22,7 @@ const Navigation = () => {
   }, []);
 
   return (
-    <div className="absolute top-11 right-11 space-x-10">
+    <div className="absolute top-11 right-11 space-x-10 hidden lg:block">
       {['about-me', 'experience', 'clients', 'contact'].map(item => (
         <Link
           key={item}

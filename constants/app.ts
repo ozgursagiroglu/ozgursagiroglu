@@ -5,10 +5,11 @@ export const WORK_HISTORY = [
     isContract: true,
     isRemote: true,
     country: 'Turkey',
+    website: 'https://machinarium.co/',
     descriptions: [
       'More than 4 projects development completed.',
       'UI bugs and performance issues fixed for websites.',
-      'With React Native, mobile app structure implemented. UI components and API connections was developed.',
+      'With React Native, a mobile app structure is implemented. UI components and API connections were developed.',
       'Backend structure implemented with Nest.js and development completed.',
     ],
     stacks:
@@ -22,9 +23,10 @@ export const WORK_HISTORY = [
     isContract: true,
     isRemote: false,
     country: 'Turkey',
+    website: 'https://www.mintus.com/',
     descriptions: [
       'Website and dashboard rebuilt with new design and Next.js in less than 2 months.',
-      'UI bugs and performance issues fixed.',
+      'UI bugs and performance issues were fixed.',
       '3rd Party marketing and analytics integrations implemented, such as Google Analytics, GTM, Heap.io',
     ],
     stacks: 'Next.js, React, EcmaScript6, Redux Toolkit, Websocket, HTML/SCSS',
@@ -37,6 +39,7 @@ export const WORK_HISTORY = [
     isContract: true,
     isRemote: true,
     country: 'Turkey',
+    website: 'https://www.bilyoner.com/',
     descriptions: [
       '3rd Party marketing and analytics integrations implemented, such as Google Analytics, GTM, MixPanel and etc.',
       'UI bugs and performance issues fixed for desktop and mobile web.',
@@ -51,6 +54,7 @@ export const WORK_HISTORY = [
     isContract: true,
     isRemote: false,
     country: 'Turkey',
+    website: 'https://www.flo.com.tr/',
     descriptions: [
       'More than 4 projects development completed.',
       '3rd Party marketing and analytics integrations implemented, such as Google Analytics, GTM',
@@ -66,10 +70,11 @@ export const WORK_HISTORY = [
     isContract: false,
     isRemote: false,
     country: 'Turkey',
+    website: 'http://alegra.io/',
     descriptions: [
       '3rd Party analytics integrations implemented, such as Google Analytics, GTM',
-      'More than 5 ecommerce projects development completed.',
-      'Single page application was developed without library.',
+      'More than 5 e-commerce projects development completed.',
+      'Single page application was developed without a library.',
     ],
     stacks: 'jQuery, EcmaScript6, HTML/SCSS, AMP, Node.js',
     start: 'Jul 2015',
@@ -81,10 +86,11 @@ export const WORK_HISTORY = [
     isContract: false,
     isRemote: false,
     country: 'Turkey',
+    website: 'https://efabrika.com/',
     descriptions: [
       'More than 5 projects development completed.',
       'UI designs implemented for web projects',
-      'Mobile apps was developed with PhoneGap',
+      'Mobile apps were developed with PhoneGap',
     ],
     stacks: 'jQuery, PhoneGap, HTML/SCSS, Node.js, Javascript, PHP',
     start: 'Dec 2012',

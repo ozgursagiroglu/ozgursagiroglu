@@ -14,6 +14,22 @@ module.exports = {
         inter: ['var(--font-inter)', ...fontFamily.sans],
         inconsolata: ['var(--font-inconsolata)', ...fontFamily.sans],
       },
+      keyframes: {
+        sayHello: {
+          '0%, 100%': {
+            transform: 'scale(1)',
+          },
+          '50%': {
+            transform: 'scale(1.3)',
+          },
+        },
+      },
+      animation: {
+        sayHello: 'sayHello 1s ease forwards',
+      },
+      transitionDelay: {
+        400: '400ms',
+      },
       colors: {
         'cetacean-blue': '#00153d',
         'tart-orange': '#ff4949',

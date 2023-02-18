@@ -11,7 +11,7 @@ const Page = () => {
     <>
       <Navigation />
 
-      <main className="space-y-52">
+      <main className="space-y-20 lg:space-y-52">
         <Hero />
         <About />
         <Experience />

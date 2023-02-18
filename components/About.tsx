@@ -1,46 +1,61 @@
 import Image from 'next/image';
 import { SKILLS } from '@/constants/app';
+import AnimatedElement from './AnimatedElement';
 import Container from './Container';
 import Section from './Section';
 
 const About = () => {
   return (
-    <Container className="flex justify-between items-start">
-      <Section title="about-me" description="A bit information about my ">
-        <div className="max-w-2xl space-y-6">
-          <p>
-            I’ve been working as a full-stack developer for over 10 years based
-            Turkey. My main focus is on front-end products, but during my career
-            I have developed mobile applications and back-end systems in
-            different roles and technologies.
-          </p>
+    <Container>
+      <AnimatedElement className="flex justify-between items-start">
+        <Section title="about-me" description="A bit of information about me">
+          <div className="max-w-2xl space-y-6">
+            <Image
+              src="/picture.png"
+              alt="Özgür Sağıroğlu"
+              width={289}
+              height={250}
+              className="block lg:hidden"
+            />
 
-          <p>
-            While I work, I attach importance to{' '}
-            <span className="text-tart-orange">code quality</span>,{' '}
-            <span className="text-tart-orange">stabilization</span> and{' '}
-            <span className="text-tart-orange">performance</span>.
-          </p>
+            <p>
+              I’ve been working as a full-stack developer for over 10 years
+              based in Turkey. My main focus is on front-end products, but I’ve
+              built mobile applications and back-end systems in different roles
+              and technologies during my career. Since 2019, I’ve been working
+              in contract roles with companies for their projects to develop and
+              optimize.
+            </p>
 
-          <p>Here are most of technologies that I used:</p>
-          <div className="grid grid-cols-2 gap-y-2 gap-x-32">
-            {SKILLS.map(item => (
-              <div
-                className="font-inconsolata text-alice-blue slash"
-                key={item}>
-                {item}
-              </div>
-            ))}
+            <p>
+              I attach importance to{' '}
+              <span className="text-tart-orange">performance</span>,{' '}
+              <span className="text-tart-orange">stabilization</span>, and{' '}
+              <span className="text-tart-orange">code quality</span> on projects
+              while I work.
+            </p>
+
+            <p>Here are most of the technologies that I used:</p>
+            <div className="grid grid-cols-2 gap-y-2 gap-x-6 lg:gap-x-32">
+              {SKILLS.map(item => (
+                <div
+                  className="font-inconsolata text-alice-blue slash"
+                  key={item}>
+                  {item}
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      </Section>
+        </Section>
 
-      <Image
-        src="/picture.png"
-        alt="Özgür Sağıroğlu"
-        width={289}
-        height={250}
-      />
+        <Image
+          src="/picture.png"
+          alt="Özgür Sağıroğlu"
+          width={289}
+          height={250}
+          className="hidden lg:block"
+        />
+      </AnimatedElement>
     </Container>
   );
 };
