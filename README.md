@@ -2,7 +2,7 @@
 # Hi, I'm Özgür! 👋
 
 ## 🚀 About Me
-I've been working as a full-stack developer for 10 years based in Turkey. My interests are front-end projects like web and mobile development. Also, I worked on back-end projects.
+I’ve been working as a full-stack developer for over 10 years based in Turkey. I met coding to develop my projects when I was in high school. I improved my skills in every project. My main focus is on front-end products, but I’ve built mobile applications and back-end systems in different roles and technologies during my career.
 
 <br />
 
