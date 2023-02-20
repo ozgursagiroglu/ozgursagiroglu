@@ -10,7 +10,7 @@ const Clients = () => {
       <Section
         title="clients"
         description="Here are the companies that I worked for their projects">
-        <div className="flex items-center flex-wrap gap-2">
+        <div className="flex items-center flex-wrap">
           {Object.keys(CLIENTS).map(item => (
             <div
               key={item}
@@ -21,8 +21,10 @@ const Clients = () => {
                 width={200}
                 height={200}
                 className={cx(
-                  CLIENTS[item as keyof typeof CLIENTS]?.className ?? '',
-                  'opacity-70 hover:opacity-100 transition-opacity'
+                  'opacity-70 hover:opacity-100 transition-opacity',
+                  {
+                    grayscale: CLIENTS[item].isGrayscale,
+                  }
                 )}
               />
             </div>
