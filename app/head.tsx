@@ -3,7 +3,7 @@ import Script from 'next/script';
 export default function Head() {
   return (
     <>
-      <title>Hi, I&apos;m Özgür</title>
+      <title>Özgür Sağıroğlu - Senior Full-Stack Developer</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta
         name="description"
