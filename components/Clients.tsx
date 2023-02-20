@@ -14,7 +14,7 @@ const Clients = () => {
           {Object.keys(CLIENTS).map(item => (
             <div
               key={item}
-              className="border border-alice-blue border-opacity-30 w-48 h-48">
+              className="border border-alice-blue border-opacity-30 w-40 h-40 lg:w-48 lg:h-48">
               <Image
                 src={`/clients/${item}.png`}
                 alt={item}
