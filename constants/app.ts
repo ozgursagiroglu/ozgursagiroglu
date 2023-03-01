@@ -13,7 +13,7 @@ export const WORK_HISTORY = [
       'Backend structure implemented with Nest.js and development completed.',
     ],
     stacks:
-      'React, React Native, Next.js, EcmaScript6, Typescript, HTML/SCSS, Nest.js, Mysql, Node.js, Redux Toolkit(RTK Query), Websocket',
+      'React, React Native, Next.js, EcmaScript6, Typescript, HTML/SCSS, Nest.js, Mysql, Node.js, Redux Toolkit(RTK Query), Websocket, TailwindCSS',
     start: 'Feb 2022',
     end: 'Feb 2023',
   },
@@ -46,7 +46,7 @@ export const WORK_HISTORY = [
     ],
     stacks: 'EcmaScript6, React, Redux, Websocket, HTML/SCSS',
     start: 'Dec 2020',
-    end: 'Feb 2021',
+    end: 'Sep 2021',
   },
   {
     company: 'Ziylan Group',
@@ -62,7 +62,7 @@ export const WORK_HISTORY = [
     ],
     stacks: 'jQuery, EcmaScript6, HTML/SCSS',
     start: 'Apr 2019',
-    end: 'Feb 2021',
+    end: 'Dec 2020',
   },
   {
     company: 'Alegra',
@@ -76,7 +76,7 @@ export const WORK_HISTORY = [
       'More than 5 e-commerce projects development completed.',
       'Single page application was developed without a library.',
     ],
-    stacks: 'jQuery, EcmaScript6, HTML/SCSS, AMP, Node.js',
+    stacks: 'jQuery, Javascript, EcmaScript6, HTML/SCSS, AMP, Node.js',
     start: 'Jul 2015',
     end: 'Apr 2019',
   },
